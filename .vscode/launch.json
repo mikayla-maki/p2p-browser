@@ -1,0 +1,119 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'tweet_nacl_rust'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=tweet_nacl_rust",
+                    "--package=tweet_nacl_rust"
+                ],
+                "filter": {
+                    "name": "tweet_nacl_rust",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'tweet_nacl_rust'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=tweet_nacl_rust",
+                    "--package=tweet_nacl_rust"
+                ],
+                "filter": {
+                    "name": "tweet_nacl_rust",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'BEC-broadcast'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=BEC-broadcast",
+                    "--package=BEC-broadcast"
+                ],
+                "filter": {
+                    "name": "BEC-broadcast",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'BEC-broadcast'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=BEC-broadcast",
+                    "--package=BEC-broadcast"
+                ],
+                "filter": {
+                    "name": "BEC-broadcast",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'generic-distributer'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=generic-distributer",
+                    "--package=generic-distributer"
+                ],
+                "filter": {
+                    "name": "generic-distributer",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'generic-distributer'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=generic-distributer",
+                    "--package=generic-distributer"
+                ],
+                "filter": {
+                    "name": "generic-distributer",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

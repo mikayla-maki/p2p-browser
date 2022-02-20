@@ -1,0 +1,6 @@
+[submodule "tweet_nacl_rust"]
+	path = tweet_nacl_rust
+	url = ./tweet_nacl_rust
+[submodule "bec_broadcast"]
+	path = bec_broadcast
+	url = ./bec_broadcast

@@ -1,0 +1,21 @@
+[package]
+name = "generic-distributer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ring = "0.16.20"
+tokio = { version = "1", features = ["full"] }
+bytes = "1"
+tokio-stream = "0.1.8"
+futures = "0.3.19"
+rand07 = { package = "rand", version = "0.7" }
+async-trait = "0.1.52"
+
+[workspace]
+
+members = [
+    "tweet_nacl_rust", "bec_broadcast"
+]
